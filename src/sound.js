@@ -1,4 +1,4 @@
-class b2Sound {
+export default class b2Sound {
   constructor() {}
 
   playPulse() {
