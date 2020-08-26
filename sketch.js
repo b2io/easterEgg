@@ -18,7 +18,7 @@ function draw() {
 window.draw = draw;
 
 function mousePressed() {
-  b.playPulse(mouseX, mouseY);
+  b.playPulse(0.3, mouseY);
 }
 window.mousePressed = mousePressed;
 
