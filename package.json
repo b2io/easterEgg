@@ -1,0 +1,22 @@
+{
+  "name": "easteregg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b2io/easterEgg.git"
+  },
+  "author": "Franky Martinez, Kate Hansen, Reed Dunkle, Zachary Chay-Dolan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b2io/easterEgg/issues"
+  },
+  "homepage": "https://github.com/b2io/easterEgg#readme",
+  "dependencies": {
+    "p5": "^1.1.9"
+  }
+}
