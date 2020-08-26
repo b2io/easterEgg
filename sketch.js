@@ -14,6 +14,5 @@ window.setup = setup;
 function draw() {
   background(0);
   sphereA.run();
-  b.playPulse();
 }
 window.draw = draw;
