@@ -22,4 +22,7 @@ function mousePressed() {
 }
 window.mousePressed = mousePressed;
 
-function mouseReleased() {}
+function mouseReleased() {
+  b.stopPulse();
+}
+window.mouseReleased = mouseReleased;

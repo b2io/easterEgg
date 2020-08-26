@@ -1,11 +1,16 @@
 export default class b2Sound {
-  constructor() {}
+  constructor() {
+    this.note = new p5.Pulse();
+  }
 
   playPulse(amp, freq) {
-    const p = new p5.Pulse();
-    p.amp(amp);
-    console.log(freq);
-    p.freq(120 + (200 * freq) / 800); //trying to get it to stick around an octave
-    p.start();
+    this.note.amp(amp);
+    this.note.freq(120 + (200 * freq) / 800); //trying to get it to stick around an octave
+    this.note.start();
+  }
+
+  stopPulse() {
+    console.log("its working");
+    this.note.stop();
   }
 }
