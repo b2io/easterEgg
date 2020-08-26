@@ -1,11 +1,10 @@
 class b2Sound {
-  constructor() {
-    console.log("nice");
-  }
+  constructor() {}
 
-  play() {
+  playPulse() {
     const p = new p5.Pulse();
     p.amp(0.5);
     p.freq(260);
+    p.start();
   }
 }
