@@ -17,7 +17,7 @@ export default class B2Sound {
   }
 
   play(countHeld) {
-    // userStartAudio();
+    userStartAudio();
 
     // this.sound.amp(amp);
     // this.sound.freq(120 + (200 * freq) / 800); //trying to get it to stick around an octave

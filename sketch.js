@@ -12,7 +12,7 @@ let sphereA;
 let sound;
 let canvas;
 
-let mouseHeldInterval = 500;
+let mouseHeldInterval = 500; // ms
 let mouseHeldCount = 0;
 let millisLastPlayed = null;
 
