@@ -3,8 +3,8 @@ export default class Circle {
     this.acceleration = createVector(0, 0.05);
     this.velocity = createVector(random(-1, 1), random(-1, 0));
     this.position = position.copy();
-    this.lifespan = 255;
     this.size = 10;
+    // TODO: Add Properties for Modifying Color
   }
 
   run () {
@@ -13,9 +13,11 @@ export default class Circle {
   }
 
   update () {
+    // TODO: Animation properties happen here (e.g. sets next state)
   }
 
   display () {
+    // Rendering happens here
     circle(
       this.position.x,
       this.position.y,
