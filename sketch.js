@@ -1,16 +1,19 @@
 import Circle from "./src/Circle.js";
-import sound from "./src/sound.js";
+import b2Sound from "./src/sound.js";
 
 let sphereA;
+let b;
 
 function setup() {
   createCanvas(900, 600);
   sphereA = new Circle(createVector(width / 2, height / 2));
+  b = new b2Sound();
 }
 window.setup = setup;
 
 function draw() {
   background(0);
   sphereA.run();
+  b.playPulse();
 }
 window.draw = draw;
