@@ -28,10 +28,6 @@ export default class B2Sound {
     const note = notesToFreq[pitch] * octave;
     const velocity = Math.min(velocityIncrement * (1 + countHeld), 1);
 
-    console.log("note", note, this.sound.notes);
-
-    console.log("countHeld", countHeld);
-
     if (countHeld > 30) {
       this.sound.noteRelease(); // Fix sounds glitching eventually
     }

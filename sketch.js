@@ -4,6 +4,7 @@ import B2Sound from "./src/Sound.js";
 function isInBounds(mouse, circle) {
   const { position, size } = circle;
   const { mouseX, mouseY } = mouse;
+
   return dist(mouseX, mouseY, position.x, position.y) < size;
 }
 
