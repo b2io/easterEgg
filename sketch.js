@@ -1,9 +1,7 @@
 function setup() {
-  createCanvas(400, 400);
-  b = new b2Sound();
-  console.info(b);
+  createCanvas(900, 600);
 }
 
 function draw() {
-  background(220);
+  background(0);
 }
