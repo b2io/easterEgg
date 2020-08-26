@@ -16,3 +16,10 @@ function draw() {
   sphereA.run();
 }
 window.draw = draw;
+
+function mousePressed() {
+  b.playPulse(mouseX, mouseY);
+}
+window.mousePressed = mousePressed;
+
+function mouseReleased() {}
