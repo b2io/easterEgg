@@ -2,14 +2,22 @@ import Circle from './src/Circle.js'
 
 let sphereA;
 
-function setup() {
+window.setup = function setup() {
   createCanvas(900, 600);
-  sphereA = new Circle(createVector(width/2, height/2))
-}
-window.setup = setup;
+  const canvasCenter = createVector(width / 2, height / 2);
 
-function draw() {
+  sphereA = new Circle({ position: canvasCenter })
+}
+
+window.draw = function () {
   background(0);
   sphereA.run();
 }
-window.draw = draw;
+
+window.mousePressed = function () {
+  sphereA.handleMousePressed();
+}
+
+window.mouseReleased = function () {
+  sphereA.handleMouseRelease();
+}
