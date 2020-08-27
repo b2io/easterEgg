@@ -56,6 +56,7 @@ export default class Circle {
 
   display () {
     // NOTE: Rendering happens here
+    fill(255);
     circle(
       this.position.x,
       this.position.y,
@@ -94,12 +95,12 @@ export default class Circle {
     }
   }
 
-  handleMouseRelease () {
+  handleMouseRelease (props) {
     if (this.animationLock || !this.timer) return;
     const isSingleClick = this.checkQuickClick();
     this.timer = null;
     this.animationLock = isSingleClick ? 'pop' : 'explode';
-    console.log('this.animationLock: ', this.animationLock);
+    props.handlePop();
   }
 
   animateExplode () {
